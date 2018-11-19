@@ -1,9 +1,8 @@
 {
-<<<<<<< HEAD
   "name": "expensealert",
   "version": "1.0.0",
   "main": "index.js",
-  "author": "Francis Antobre",
+  "author": "Francis Antobr",
   "license": "MIT",
   "scripts": {
     "build:dev": "webpack",
