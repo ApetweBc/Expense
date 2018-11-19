@@ -14,7 +14,7 @@ Platform:
   win32 x64
 
 Trace: 
-  SyntaxError: I:\backup\React\Expensealert\package.json: Unexpected token < in JSON at position 2
+  SyntaxError: I:\backup\React\Expensealert\package.json: Unexpected token < in JSON at position 832
       at JSON.parse (<anonymous>)
       at C:\Users\menace\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:1130:59
       at Generator.next (<anonymous>)
@@ -23,11 +23,10 @@ Trace:
 
 npm manifest: 
   {
-  <<<<<<< HEAD
     "name": "expensealert",
     "version": "1.0.0",
     "main": "index.js",
-    "author": "Francis Antobre",
+    "author": "Francis Antobr",
     "license": "MIT",
     "scripts": {
       "build:dev": "webpack",
