@@ -1,6 +1,7 @@
-# Expense
+# Git Commands
 
-Download or clone
-npm install the dependencies
-npm run dev-server to start the server
-Enjoy
+git init - Create a new git repo
+git status - View the changes to your project code
+git add - Add files to staging area
+git commit - Creates a new commit with files from staging area
+git log - View recent commits
