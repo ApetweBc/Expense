@@ -1,9 +1,6 @@
 {
 <<<<<<< HEAD
   "name": "expenalert",
-=======
-  "name": "budget-app",
->>>>>>> c4b7515b378a4d971e5e6ec8ece539e8e46c37fc
   "version": "1.0.0",
   "main": "index.js",
   "author": "Francis Antobre",
