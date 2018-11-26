@@ -14,7 +14,7 @@ import expenses from '../fixtures/expenses';
 import database from '../../firebase/firebase';
 
 const uid = 'thisismytestuid';
-const defaultAuthState = {auth: { uid } };
+const defaultAuthState = { auth: { uid } };
 const createMockStore = configureMockStore([thunk]);
 
 beforeEach((done) => {
@@ -105,7 +105,7 @@ test('should add expense to database and store', (done) => {
       }
     });
 
-    return database.ref(`users/${uid}expenses/${actions[0].expense.id}`).once('value');
+    return database.ref(`users/${uid}/expenses/${actions[0].expense.id}`).once('value');
   }).then((snapshot) => {
     expect(snapshot.val()).toEqual(expenseData);
     done();
@@ -131,7 +131,7 @@ test('should add expense with defaults to database and store', (done) => {
       }
     });
 
-    return database.ref(`users/${uid}expenses/${actions[0].expense.id}`).once('value');
+    return database.ref(`users/${uid}/expenses/${actions[0].expense.id}`).once('value');
   }).then((snapshot) => {
     expect(snapshot.val()).toEqual(expenseDefaults);
     done();

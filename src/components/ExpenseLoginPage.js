@@ -3,15 +3,18 @@ import { connect } from 'react-redux';
 import { startLogin } from '../actions/auth';
 
 
-
-const ExpenseLoginPage = ({ startLogin }) =>  (
-
-    <div>
-       <button onClick={startLogin}> Login </button>
+export const ExpenseLoginPage = ({ startLogin }) => (
+  <div className="box-layout">
+    <div className="box-layout__box">
+      <h1 className="box-layout__title">Expensify</h1>
+      <p>It's time to get your expenses under control.</p>
+      <button className="button" onClick={startLogin}>Login with Google</button>
     </div>
+  </div>
 );
 
 const mapDispatchToProps = (dispatch) => ({
-       startLogin:  () => dispatch(startLogin())
+  startLogin: () => dispatch(startLogin())
 });
-export default connect (undefined, mapDispatchToProps)(ExpenseLoginPage);
+
+export default connect(undefined, mapDispatchToProps)(ExpenseLoginPage);
